@@ -12,7 +12,7 @@ export default function useTelemetry() {
   useEffect(() => {
 
     const socket = new WebSocket(
-      "ws://localhost:8080/ws"
+      "wss://pulsemesh-backend.onrender.com/ws"
     )
 
     socket.onmessage = (event) => {
